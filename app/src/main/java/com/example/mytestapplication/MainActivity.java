@@ -1,7 +1,6 @@
 package com.example.mytestapplication;
 
 import android.os.Bundle;
-//コメント追加してみます0502
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
