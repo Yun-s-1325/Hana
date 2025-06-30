@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Test Application"
+rootProject.name = "Hana"
 include(":app")
+ 
