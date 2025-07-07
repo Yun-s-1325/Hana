@@ -19,7 +19,33 @@ class MainActivity : AppCompatActivity() {
         var count = 0
         waterBtn.setOnClickListener{
             count++
-        messageView.text = "$count"
+        when (count) {
+            in 1..19->{
+                messageView.text= getString(R.string.message0)
+                flowerImage.setImageResource(R.drawable.f0)
+            }
+            in 20..39->{
+                messageView.text= getString(R.string.message1)
+                flowerImage.setImageResource(R.drawable.f1)
+            }
+            in 40..59-> {
+                messageView.text= getString(R.string.message2)
+                flowerImage.setImageResource(R.drawable.f2)
+            }
+            in 60..79->{
+                messageView.text= getString(R.string.message3)
+                flowerImage.setImageResource(R.drawable.f3)
+            }
+            in 80..99->{
+                messageView.text= getString(R.string.message4)
+                flowerImage.setImageResource(R.drawable.f4)
+            }
+            else ->{
+            messageView.text = getString(R.string.message5)
+            flowerImage.setImageResource(R.drawable.f5)
+            }
+        }
+
         }
     }
 }
