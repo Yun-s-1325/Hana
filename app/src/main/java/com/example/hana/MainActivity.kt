@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val messageView: TextView = findViewById(R.id.messageView)
-        val flowerImage: ImageView= findViewById(R.id.flowerImage)
+        val flowerImage: ImageView = findViewById(R.id.flowerImage)
         val waterBtn: Button = findViewById(R.id.waterBtn)
         val resetBtn: Button = findViewById(R.id.resetBtn)
 
@@ -21,27 +21,27 @@ class MainActivity : AppCompatActivity() {
         waterBtn.setOnClickListener {
             count++
             when (count) {
-                in 1..19 -> {
+                in 1..9 -> {
                     messageView.text = getString(R.string.message0)
                     flowerImage.setImageResource(R.drawable.f0)
                 }
 
-                in 20..39 -> {
+                in 10..19 -> {
                     messageView.text = getString(R.string.message1)
                     flowerImage.setImageResource(R.drawable.f1)
                 }
 
-                in 40..59 -> {
+                in 20..29 -> {
                     messageView.text = getString(R.string.message2)
                     flowerImage.setImageResource(R.drawable.f2)
                 }
 
-                in 60..79 -> {
+                in 30..39 -> {
                     messageView.text = getString(R.string.message3)
                     flowerImage.setImageResource(R.drawable.f3)
                 }
 
-                in 80..99 -> {
+                in 40..49 -> {
                     messageView.text = getString(R.string.message4)
                     flowerImage.setImageResource(R.drawable.f4)
                 }
@@ -62,4 +62,5 @@ class MainActivity : AppCompatActivity() {
                 resetBtn.visibility = View.INVISIBLE
             }
         }
+    }
 }
